@@ -1,0 +1,14 @@
+D:\Dev\Gas Sim\Gas Simulator\obj\Debug\Gas Simulator.csprojAssemblyReference.cache
+D:\Dev\Gas Sim\Gas Simulator\bin\Debug\Gas Simulator.exe.config
+D:\Dev\Gas Sim\Gas Simulator\bin\Debug\Gas Simulator.exe
+D:\Dev\Gas Sim\Gas Simulator\bin\Debug\Gas Simulator.pdb
+D:\Dev\Gas Sim\Gas Simulator\obj\Debug\MainWindow.g.cs
+D:\Dev\Gas Sim\Gas Simulator\obj\Debug\App.g.cs
+D:\Dev\Gas Sim\Gas Simulator\obj\Debug\Gas Simulator_MarkupCompile.cache
+D:\Dev\Gas Sim\Gas Simulator\obj\Debug\Gas Simulator_MarkupCompile.lref
+D:\Dev\Gas Sim\Gas Simulator\obj\Debug\MainWindow.baml
+D:\Dev\Gas Sim\Gas Simulator\obj\Debug\Gas Simulator.g.resources
+D:\Dev\Gas Sim\Gas Simulator\obj\Debug\Gas_Simulator.Properties.Resources.resources
+D:\Dev\Gas Sim\Gas Simulator\obj\Debug\Gas Simulator.csproj.GenerateResource.cache
+D:\Dev\Gas Sim\Gas Simulator\obj\Debug\Gas Simulator.exe
+D:\Dev\Gas Sim\Gas Simulator\obj\Debug\Gas Simulator.pdb
