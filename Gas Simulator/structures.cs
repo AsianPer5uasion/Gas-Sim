@@ -11,7 +11,7 @@ namespace Gas_Simulator
             Z = z;
         }
 
-        public double Avg() => Math.Sqrt(Math.Pow(X, 2) + Math.Pow(Y, 2) + Math.Pow(Z, 2));
+        public double Magnitude() => Math.Sqrt(Math.Pow(X, 2) + Math.Pow(Y, 2) + Math.Pow(Z, 2));
 
         public double X { get; }
         public double Y { get; }
@@ -27,7 +27,7 @@ namespace Gas_Simulator
             Z = z;
         }
 
-        public double Avg() => Math.Sqrt(Math.Pow(X, 2) + Math.Pow(Y, 2) + Math.Pow(Z, 2));
+        public double Magnitude() => Math.Sqrt(Math.Pow(X, 2) + Math.Pow(Y, 2) + Math.Pow(Z, 2));
 
         public double X { get; }
         public double Y { get; }
