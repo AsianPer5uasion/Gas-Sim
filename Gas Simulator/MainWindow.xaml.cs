@@ -20,14 +20,19 @@ namespace Gas_Simulator
     /// </summary>
     public partial class MainWindow : Window
     {
-        public MainWindow()
-        {
-            InitializeComponent();
-        }
+        Molecule[] molecules = new Molecule[10];
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
-            
+            for (int i = 0; i < 10; i++ )
+            {
+                molecules[i] = new Molecule();
+            }
+
+            for (int i = 0; i < 10; i++)
+            {
+                Console.WriteLine($"Molecule {i+1}:\r\n" + molecules[i].ToString());
+            }
         }
     }
 }

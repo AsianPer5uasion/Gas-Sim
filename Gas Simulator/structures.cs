@@ -2,9 +2,25 @@
 
 namespace Gas_Simulator
 {
-    struct Velocity
+    struct Point
     {
-        Velocity (double x, double y, double z)
+        public Point (int x, int y, int z)
+        {
+            X = x;
+            Y = y;
+            Z = z;
+        }
+
+        public double X { get; }
+        public double Y { get; }
+        public double Z { get; }
+
+        public override string ToString() => $"({X}, {Y}, {Z})";
+    }
+
+    struct Velocity
+    { 
+        public Velocity (double x, double y, double z)
         {
             X = x;
             Y = y;
@@ -16,11 +32,13 @@ namespace Gas_Simulator
         public double X { get; }
         public double Y { get; }
         public double Z { get; }
+
+        public override string ToString() => $"({X}, {Y}, {Z})";
     }
 
     struct Acceleration
     {
-        Acceleration(double x, double y, double z)
+        public Acceleration(double x, double y, double z)
         {
             X = x;
             Y = y;
@@ -32,5 +50,7 @@ namespace Gas_Simulator
         public double X { get; }
         public double Y { get; }
         public double Z { get; }
+
+        public override string ToString() => $"({X}, {Y}, {Z})";
     }
 }
