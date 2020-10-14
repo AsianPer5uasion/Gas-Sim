@@ -1,0 +1,8 @@
+D:\Dev\Gas Sim\Gas Sim Math\bin\Debug\netstandard2.0\Gas Sim Math.deps.json
+D:\Dev\Gas Sim\Gas Sim Math\bin\Debug\netstandard2.0\Gas Sim Math.dll
+D:\Dev\Gas Sim\Gas Sim Math\bin\Debug\netstandard2.0\Gas Sim Math.pdb
+D:\Dev\Gas Sim\Gas Sim Math\obj\Debug\netstandard2.0\Gas Sim Math.fsprojAssemblyReference.cache
+D:\Dev\Gas Sim\Gas Sim Math\obj\Debug\netstandard2.0\Gas Sim Math.AssemblyInfoInputs.cache
+D:\Dev\Gas Sim\Gas Sim Math\obj\Debug\netstandard2.0\Gas Sim Math.AssemblyInfo.fs
+D:\Dev\Gas Sim\Gas Sim Math\obj\Debug\netstandard2.0\Gas Sim Math.dll
+D:\Dev\Gas Sim\Gas Sim Math\obj\Debug\netstandard2.0\Gas Sim Math.pdb
