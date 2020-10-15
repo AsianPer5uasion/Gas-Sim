@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Windows.Media.Media3D;
 
 namespace Gas_Simulator
 {
@@ -20,19 +21,6 @@ namespace Gas_Simulator
     /// </summary>
     public partial class MainWindow : Window
     {
-        Molecule[] molecules = new Molecule[10];
-
-        private void Window_Loaded(object sender, RoutedEventArgs e)
-        {
-            for (int i = 0; i < 10; i++ )
-            {
-                molecules[i] = new Molecule();
-            }
-
-            for (int i = 0; i < 10; i++)
-            {
-                Console.WriteLine($"Molecule {i+1}:\r\n" + molecules[i].ToString());
-            }
-        }
+        
     }
 }
