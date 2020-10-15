@@ -17,9 +17,11 @@ namespace Gas_Simulator
             Z = z;
         }
 
-        // zeroed vector
-        public static Vector Zero() => new Vector(0, 0, 0);
-        
+        // useful static methods
+        public static Vector Zero() => new Vector(0, 0, 0); // create a vector where all values are zeros
+        public static double Dot(Vector a, Vector b) => throw new NotImplementedException();
+        public static Vector Cross(Vector a, Vector b) => throw new NotImplementedException();
+
         // calculate the scalar magnitude of the vector
         public double Magnitude() => Math.Sqrt(Math.Pow(X, 2) + Math.Pow(Y, 2) + Math.Pow(Z, 2));
 
@@ -33,8 +35,6 @@ namespace Gas_Simulator
         public static Vector operator *(Vector a, int b) => new Vector(a.X * b, a.Y * b, a.Z * b);
         public static Vector operator +(Vector a, Vector b) => new Vector(a.X + b.X, a.Y + b.Y, a.Z + b.Z);
         public static Vector operator -(Vector a, Vector b) => new Vector(a.X - b.X, a.Y - b.Y, a.Z - b.Z);
-
-        // add methods to calculate dot and cross products
 
         // output vectors nicely as strings
         public override string ToString() => $"({X}, {Y}, {Z})";
