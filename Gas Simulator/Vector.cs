@@ -2,7 +2,7 @@
 
 namespace Gas_Simulator
 {
-    public class Vector
+    public struct Vector
     {
         // values contained by the vector
         public double X { get; set; }
