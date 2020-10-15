@@ -5,8 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Gas_Simulator"
         mc:Ignorable="d"
-        Title="MainWindow" Height="531.657" Width="800"
-        Loaded="Window_Loaded">
+        Title="MainWindow" Height="531.657" Width="800">
 
     <Grid>
         <Viewport3D Name="ViewPortMain">

@@ -21,6 +21,6 @@ namespace Gas_Simulator
     /// </summary>
     public partial class MainWindow : Window
     {
-        
+
     }
 }

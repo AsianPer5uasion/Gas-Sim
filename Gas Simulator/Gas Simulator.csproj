@@ -63,7 +63,9 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="structures.cs" />
+    <Compile Include="Container.cs" />
+    <Compile Include="GasSim.cs" />
+    <Compile Include="Vector.cs" />
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>

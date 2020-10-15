@@ -11,6 +11,7 @@ namespace Gas_Simulator
         private const double DEFAULT_ELASTICITY = 0.5;
 
         // all properties possessed by a molecule object
+        public Container Container { get; }
         public Vector Pos { get; set; }
         public Vector Velocity { get; set; }
         public double Mass { get; set; }
@@ -21,8 +22,9 @@ namespace Gas_Simulator
         public double Momentum { get; }
 
         // default molecule, used for testing
-        public Molecule()
+        public Molecule(Container container)
         {
+            Container = container;
             Pos = new Vector(0, 0, 0);
             Velocity = new Vector(1, 0, 0);
             Mass = DEFAULT_MASS;
@@ -35,7 +37,7 @@ namespace Gas_Simulator
         }
 
         // molecule constructor, take arguments from sliders in the Gas Sim GUI
-        public Molecule (Vector pos, Vector velocity, double mass, double radius, double ep, double elasticity)
+        public Molecule (Container container, Vector pos, Vector velocity, double mass, double radius, double ep, double elasticity)
         {
             Pos = pos;
             Velocity = velocity;
@@ -54,6 +56,7 @@ namespace Gas_Simulator
         // update velocity, position and kinetic energy based on delta time
         public void Update(double dt)
         {
+            // check for collisions
             Pos += (Velocity * dt);
         }
     }
