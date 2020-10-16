@@ -19,10 +19,9 @@ namespace Gas_Simulator
     public class Visuals
     {
 
-
         public Model3DGroup MainModel3Dgroup = new Model3DGroup();
 
-        public void AddMolecule(double x, double y, double z, double radius)
+        public void AddMolecule(double x, double y, double z, double radius, Viewport3D viewport)
 
         {
             var phi = 10;   //Both dictate poly count (Greater = greater poly count)
@@ -37,14 +36,14 @@ namespace Gas_Simulator
             //Define attributess
             SolidColorBrush brush1 = Brushes.Red;
             DiffuseMaterial material1 = new DiffuseMaterial(brush1);
-            material1.Brush.Opacity = molOpacity;
+            //material1.Brush.Opacity = molOpacity;
             //Define and add model
             GeometryModel3D model1 = new GeometryModel3D(mesh1, material1);
             MainModel3Dgroup.Children.Add(model1);
             ModelVisual3D model_visual = new ModelVisual3D();
             model_visual.Content = MainModel3Dgroup;
             //Add to viewport
-            MainViewport.Children.Add(model_visual);
+            viewport.Children.Add(model_visual);
 
         }
 
