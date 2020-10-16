@@ -16,8 +16,7 @@ using System.Windows.Media.Media3D;
 
 namespace Gas_Simulator
 {
-    public class VisualsMain
-    {
+
         public Model3DGroup MainModel3Dgroup = new Model3DGroup();
 
         public void AddMolecule(double x, double y, double z, double radius)
@@ -117,5 +116,5 @@ namespace Gas_Simulator
                 r0 = r1;
             }
         }
-    }
+    
 }
