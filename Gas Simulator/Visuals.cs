@@ -16,7 +16,7 @@ using System.Windows.Media.Media3D;
 
 namespace Gas_Simulator
 {
-    public static class VisualsMain
+    public class VisualsMain
     {
         public Model3DGroup MainModel3Dgroup = new Model3DGroup();
 
