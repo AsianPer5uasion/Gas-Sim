@@ -8,7 +8,6 @@ namespace Gas_Simulator
 {
     class GasSim
     {
-        // test
-        public List<Molecule> Molecules { get; set; }
+        
     }
 }

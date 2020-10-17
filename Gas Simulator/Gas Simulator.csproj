@@ -67,6 +67,7 @@
     </Compile>
     <Compile Include="Container.cs" />
     <Compile Include="GasSim.cs" />
+    <Compile Include="ObjectModel3D.cs" />
     <Compile Include="Vector.cs" />
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
