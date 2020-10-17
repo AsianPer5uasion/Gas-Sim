@@ -36,8 +36,6 @@ C:\Users\bowbo\Source\Repos\AsianPer5uasion\Gas-Sim\Gas Simulator\bin\Debug\Shar
 C:\Users\bowbo\Source\Repos\AsianPer5uasion\Gas-Sim\Gas Simulator\bin\Debug\SharpGL.SceneGraph.xml
 C:\Users\bowbo\Source\Repos\AsianPer5uasion\Gas-Sim\Gas Simulator\bin\Debug\SharpGL.WPF.pdb
 C:\Users\bowbo\Source\Repos\AsianPer5uasion\Gas-Sim\Gas Simulator\bin\Debug\SharpGL.WPF.xml
-C:\Users\bowbo\Source\Repos\AsianPer5uasion\Gas-Sim\Gas Simulator\obj\Debug\test.g.cs
-C:\Users\bowbo\Source\Repos\AsianPer5uasion\Gas-Sim\Gas Simulator\obj\Debug\test.baml
 C:\Users\bowbo\Source\Repos\AsianPer5uasion\Gas-Sim\Gas Simulator\obj\Debug\Gas Simulator.csproj.CopyComplete
 D:\Dev\Gas Sim\Gas Simulator\bin\Debug\SharpGL.dll
 D:\Dev\Gas Sim\Gas Simulator\bin\Debug\SharpGL.SceneGraph.dll
@@ -51,3 +49,5 @@ D:\Dev\Gas Sim\Gas Simulator\bin\Debug\SharpGL.WPF.xml
 D:\Dev\Gas Sim\Gas Simulator\obj\Debug\test.g.cs
 D:\Dev\Gas Sim\Gas Simulator\obj\Debug\test.baml
 D:\Dev\Gas Sim\Gas Simulator\obj\Debug\Gas Simulator.csproj.CopyComplete
+C:\Users\bowbo\Source\Repos\AsianPer5uasion\Gas-Sim\Gas Simulator\obj\Debug\preMain.g.cs
+C:\Users\bowbo\Source\Repos\AsianPer5uasion\Gas-Sim\Gas Simulator\obj\Debug\preMain.baml

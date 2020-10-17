@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -9,56 +10,65 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
-
-using System.Windows.Media.Media3D;
+using SharpGL;
 
 namespace Gas_Simulator
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for test.xaml
     /// </summary>
-    
-    public partial class MainWindow : Window
-
+    public partial class test : Window
     {
-        public Model3DGroup MainModel3Dgroup = new Model3DGroup();
-        
-        
+        ObjectModel3D testobj = ObjectModel3D.LoadFromFile("../../sphere.obj");
 
-        private void Window_Loaded(object sender, RoutedEventArgs e)
+        public test()
+        {
+            InitializeComponent();
+        }
+
+        private void openGLControl_OpenGLDraw(object sender, SharpGL.SceneGraph.OpenGLEventArgs args)
+        {
+            OpenGL gl = openGLControl.OpenGL;
+
+            gl.Clear(OpenGL.GL_COLOR_BUFFER_BIT | OpenGL.GL_DEPTH_BUFFER_BIT);
+            gl.Begin(OpenGL.GL_TRIANGLES);
+
+            testobj.Draw(gl);
+
+            gl.End();
+        }
+
+        private void openGLControl_OpenGLInitialized(object sender, SharpGL.SceneGraph.OpenGLEventArgs args)
+        {
+           
+            OpenGL gl = openGLControl.OpenGL;
+            gl.ClearColor(0, 0, 0, 0);
+        }
+
+        private void openGLControl_Resized(object sender, SharpGL.SceneGraph.OpenGLEventArgs args)
         {
 
-            test win2 = new test();
-            win2.Show();
-            slider1.Width = 300;
-            slider1.Value = 0;
+            //  Get the OpenGL object.
+            OpenGL gl = openGLControl.OpenGL;
 
-            Visuals visualsMain = new Visuals();
-            for (int i = 0; i < 10; i++)
-            {
-
-                visualsMain.AddMolecule(i, 0, 0, 0.5, MainViewport, Brushes.Red);
-                visualsMain.AddMolecule(0, i, 0, 0.5, MainViewport, Brushes.Blue);
-                visualsMain.AddMolecule(0, 0, i, 0.5, MainViewport, Brushes.Green);
-                visualsMain.AddMolecule(-i, 0, 0, 0.5, MainViewport, Brushes.Yellow);
-                visualsMain.AddMolecule(0, -i, 0, 0.5, MainViewport, Brushes.Orange);
-                visualsMain.AddMolecule(0, 0, -i, 0.5, MainViewport, Brushes.Pink);
-
-            }
-           
-           
+            gl.MatrixMode(OpenGL.GL_PROJECTION);
+            gl.LoadIdentity();
+            gl.Perspective(60.0f, (double)Width / (double)Height, 0.01, 100.0);
+            gl.LookAt(-5, 5, -5, 0, 0, 0, 0, 1, 0);
+            gl.MatrixMode(OpenGL.GL_MODELVIEW);
         }
 
         private void slider1_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
 
         {
+            OpenGL gl = openGLControl.OpenGL;
+
             double sliderMult = slider1.Value / 10;   //0-10
             double rad = 15;
             double radSq = rad * rad;
-            double x=0; double z = 0;
-       
+            double x = 0; double z = 0;
+
             if (sliderMult < 0.5)
             {
                 x = -1 * rad * (1 - sliderMult * 2);
@@ -70,12 +80,10 @@ namespace Gas_Simulator
 
             z = Math.Sqrt(radSq - (x * x));
 
-            Console.WriteLine(sliderMult.ToString()+"   " + x + "   " + z);
-
-            Main.LookDirection = new Vector3D(-x, 0, -z);
-            Main.Position = new Point3D(x, 0, z);
+            Console.WriteLine(sliderMult.ToString() + "   " + x + "   " + z);
+            gl.LookAt(0, 0, 0, -x, 0, -z, 0, 1, 0);
 
         }
+
     }
-    
 }

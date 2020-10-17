@@ -65,11 +65,11 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="test.xaml.cs">
-      <DependentUpon>test.xaml</DependentUpon>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
     </Compile>
     <Compile Include="Visuals.cs" />
-    <Page Include="MainWindow.xaml">
+    <Page Include="preMain.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -81,11 +81,11 @@
     <Compile Include="GasSim.cs" />
     <Compile Include="ObjectModel3D.cs" />
     <Compile Include="Vector.cs" />
-    <Compile Include="MainWindow.xaml.cs">
-      <DependentUpon>MainWindow.xaml</DependentUpon>
+    <Compile Include="preMain.xaml.cs">
+      <DependentUpon>preMain.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="test.xaml">
+    <Page Include="MainWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

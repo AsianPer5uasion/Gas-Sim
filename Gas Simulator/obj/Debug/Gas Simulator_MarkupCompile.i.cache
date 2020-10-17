@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-D:\Dev\Gas Sim\Gas Simulator\obj\Debug\
+C:\Users\bowbo\Source\Repos\AsianPer5uasion\Gas-Sim\Gas Simulator\obj\Debug\
 Gas_Simulator
 none
 false
 DEBUG;TRACE
-D:\Dev\Gas Sim\Gas Simulator\App.xaml
-21450263916
+C:\Users\bowbo\Source\Repos\AsianPer5uasion\Gas-Sim\Gas Simulator\App.xaml
+2-1619768436
 
-13850722743
-16-400293847
-MainWindow.xaml;test.xaml;
+131432720125
+16-562731764
+preMain.xaml;MainWindow.xaml;
 
-True
+False
 
