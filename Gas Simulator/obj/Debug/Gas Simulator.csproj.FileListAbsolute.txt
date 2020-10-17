@@ -27,3 +27,15 @@ C:\Users\bowbo\Source\Repos\AsianPer5uasion\Gas-Sim\Gas Simulator\obj\Debug\Gas 
 C:\Users\bowbo\Source\Repos\AsianPer5uasion\Gas-Sim\Gas Simulator\obj\Debug\Gas Simulator.csproj.CoreCompileInputs.cache
 C:\Users\bowbo\Source\Repos\AsianPer5uasion\Gas-Sim\Gas Simulator\obj\Debug\Gas Simulator.exe
 C:\Users\bowbo\Source\Repos\AsianPer5uasion\Gas-Sim\Gas Simulator\obj\Debug\Gas Simulator.pdb
+C:\Users\bowbo\Source\Repos\AsianPer5uasion\Gas-Sim\Gas Simulator\bin\Debug\SharpGL.dll
+C:\Users\bowbo\Source\Repos\AsianPer5uasion\Gas-Sim\Gas Simulator\bin\Debug\SharpGL.SceneGraph.dll
+C:\Users\bowbo\Source\Repos\AsianPer5uasion\Gas-Sim\Gas Simulator\bin\Debug\SharpGL.WPF.dll
+C:\Users\bowbo\Source\Repos\AsianPer5uasion\Gas-Sim\Gas Simulator\bin\Debug\SharpGL.pdb
+C:\Users\bowbo\Source\Repos\AsianPer5uasion\Gas-Sim\Gas Simulator\bin\Debug\SharpGL.xml
+C:\Users\bowbo\Source\Repos\AsianPer5uasion\Gas-Sim\Gas Simulator\bin\Debug\SharpGL.SceneGraph.pdb
+C:\Users\bowbo\Source\Repos\AsianPer5uasion\Gas-Sim\Gas Simulator\bin\Debug\SharpGL.SceneGraph.xml
+C:\Users\bowbo\Source\Repos\AsianPer5uasion\Gas-Sim\Gas Simulator\bin\Debug\SharpGL.WPF.pdb
+C:\Users\bowbo\Source\Repos\AsianPer5uasion\Gas-Sim\Gas Simulator\bin\Debug\SharpGL.WPF.xml
+C:\Users\bowbo\Source\Repos\AsianPer5uasion\Gas-Sim\Gas Simulator\obj\Debug\test.g.cs
+C:\Users\bowbo\Source\Repos\AsianPer5uasion\Gas-Sim\Gas Simulator\obj\Debug\test.baml
+C:\Users\bowbo\Source\Repos\AsianPer5uasion\Gas-Sim\Gas Simulator\obj\Debug\Gas Simulator.csproj.CopyComplete
