@@ -10,13 +10,11 @@ namespace Gas_Simulator
     {
         // properties possessed by an ObjectModel3D
         public Vector[] Vertices { get; }
-        public Vector[] Triangles { get; }
 
         // construct an ObjectModel3D from an array of vertices
         ObjectModel3D(Vector[] vertices)
         {
             Vertices = vertices;
-            Triangles = vertices; // calculate triangles
         }
 
         // load a 3d object from a .obj file

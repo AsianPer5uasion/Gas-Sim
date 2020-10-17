@@ -13,7 +13,7 @@ namespace Gas_Simulator
         public List<Molecule> Molecules { get; set; }
 
         // create a new container with the shape of the object in objectmodelfile.obj containing molcount molecules
-        Container(string objectmodelfile, int molcount)
+        public Container(string objectmodelfile, int molcount)
         {
             ObjectModel = ObjectModel3D.LoadFromFile(objectmodelfile);
 
