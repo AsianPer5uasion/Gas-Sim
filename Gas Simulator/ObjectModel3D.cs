@@ -42,7 +42,7 @@ namespace Gas_Simulator
                     triangles.Add(values);
                 }
             }
-            
+
             return new ObjectModel3D(vertices.ToArray(), triangles.ToArray());
         }
 

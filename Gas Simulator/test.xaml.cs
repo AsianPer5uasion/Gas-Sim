@@ -57,7 +57,33 @@ namespace Gas_Simulator
             gl.Perspective(60.0f, (double)Width / (double)Height, 0.01, 100.0);
             gl.LookAt(-5, 5, -5, 0, 0, 0, 0, 1, 0);
             gl.MatrixMode(OpenGL.GL_MODELVIEW);
+        }
+
+        private void slider1_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
+
+        {
+            OpenGL gl = openGLControl.OpenGL;
+
+            double sliderMult = slider1.Value / 10;   //0-10
+            double rad = 15;
+            double radSq = rad * rad;
+            double x = 0; double z = 0;
+
+            if (sliderMult < 0.5)
+            {
+                x = -1 * rad * (1 - sliderMult * 2);
+            }
+            else if (sliderMult > 0.5)
+            {
+                x = rad * (sliderMult - 0.5) * 2;
+            }
+
+            z = Math.Sqrt(radSq - (x * x));
+
+            Console.WriteLine(sliderMult.ToString() + "   " + x + "   " + z);
+            gl.LookAt(0, 0, 0, -x, 0, -z, 0, 1, 0);
 
         }
+
     }
 }
