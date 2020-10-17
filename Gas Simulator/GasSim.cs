@@ -9,19 +9,24 @@ namespace Gas_Simulator
     class GasSim
     {
         // files storing the possible container shapes
-        readonly string[] CONTAINER_SHAPES = { "", "", "" };
+        readonly Dictionary<string, string> CONTAINER_SHAPE_FILES = new Dictionary<string, string>
+        {
+            { "cube", "" },
+            { "sphere", "" },
+            { "cylinder", "" }
+        };
 
         // properties contained in a gas sim
-        public int ContainerShape { get; set; }
+        public string ContainerShape { get; set; }
         public int MoleculeCount { get; set; }
         public Container Container { get; set; }
 
-        GasSim(int containershape, int moleculecount)
+        GasSim(string containershape, int moleculecount)
         {
             ContainerShape = containershape;
             MoleculeCount = moleculecount;
 
-            Container = new Container(CONTAINER_SHAPES[ContainerShape], MoleculeCount);
+            Container = new Container(CONTAINER_SHAPE_FILES[ContainerShape], MoleculeCount);
         }
     }
 }
