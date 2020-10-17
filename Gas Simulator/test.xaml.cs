@@ -20,7 +20,7 @@ namespace Gas_Simulator
     /// </summary>
     public partial class test : Window
     {
-        ObjectModel3D testobj = ObjectModel3D.LoadFromFile("../../cube.obj");
+        ObjectModel3D testobj = ObjectModel3D.LoadFromFile("../../sphere.obj");
 
         public test()
         {
