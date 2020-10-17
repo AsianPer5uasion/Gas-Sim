@@ -35,7 +35,7 @@ namespace Gas_Simulator
             gl.Begin(OpenGL.GL_TRIANGLES);
 
             testobj.Draw(gl);
-
+            Console.WriteLine("yo");
             gl.End();
         }
 
