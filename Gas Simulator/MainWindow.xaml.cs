@@ -30,7 +30,8 @@ namespace Gas_Simulator
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
 
-
+            test win2 = new test();
+            win2.Show();
             slider1.Width = 300;
             slider1.Value = 0;
 
@@ -44,8 +45,6 @@ namespace Gas_Simulator
                 visualsMain.AddMolecule(-i, 0, 0, 0.5, MainViewport, Brushes.Yellow);
                 visualsMain.AddMolecule(0, -i, 0, 0.5, MainViewport, Brushes.Orange);
                 visualsMain.AddMolecule(0, 0, -i, 0.5, MainViewport, Brushes.Pink);
-
-
 
             }
            

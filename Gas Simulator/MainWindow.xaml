@@ -13,6 +13,9 @@
             <ColumnDefinition Width="47*"/>
         </Grid.ColumnDefinitions>
         <Viewport3D Name="MainViewport" Grid.ColumnSpan="2">
+            <Viewport3D.CacheMode>
+                <BitmapCache/>
+            </Viewport3D.CacheMode>
 
             <Viewport3D.Camera>
                 <PerspectiveCamera 
@@ -37,17 +40,7 @@
                         </DirectionalLight>
                     </ModelVisual3D.Content>
                     </ModelVisual3D>
-                    <ModelVisual3D>
-                        <ModelVisual3D.Content>
-                            <DirectionalLight 
-                            x:Name = "LightMain3" 
-                            Direction = "1,1,1"
-                            
-                            >
-                            </DirectionalLight>
-                        </ModelVisual3D.Content>
-
-                    </ModelVisual3D>
+                    
                 </ModelVisual3D.Children>
                
             </ModelVisual3D>
