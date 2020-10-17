@@ -12,3 +12,18 @@ D:\Dev\Gas Sim\Gas Simulator\obj\Debug\Gas_Simulator.Properties.Resources.resour
 D:\Dev\Gas Sim\Gas Simulator\obj\Debug\Gas Simulator.csproj.GenerateResource.cache
 D:\Dev\Gas Sim\Gas Simulator\obj\Debug\Gas Simulator.exe
 D:\Dev\Gas Sim\Gas Simulator\obj\Debug\Gas Simulator.pdb
+C:\Users\bowbo\Source\Repos\AsianPer5uasion\Gas-Sim\Gas Simulator\bin\Debug\Gas Simulator.exe.config
+C:\Users\bowbo\Source\Repos\AsianPer5uasion\Gas-Sim\Gas Simulator\bin\Debug\Gas Simulator.exe
+C:\Users\bowbo\Source\Repos\AsianPer5uasion\Gas-Sim\Gas Simulator\bin\Debug\Gas Simulator.pdb
+C:\Users\bowbo\Source\Repos\AsianPer5uasion\Gas-Sim\Gas Simulator\obj\Debug\Gas Simulator.csprojAssemblyReference.cache
+C:\Users\bowbo\Source\Repos\AsianPer5uasion\Gas-Sim\Gas Simulator\obj\Debug\MainWindow.g.cs
+C:\Users\bowbo\Source\Repos\AsianPer5uasion\Gas-Sim\Gas Simulator\obj\Debug\App.g.cs
+C:\Users\bowbo\Source\Repos\AsianPer5uasion\Gas-Sim\Gas Simulator\obj\Debug\Gas Simulator_MarkupCompile.cache
+C:\Users\bowbo\Source\Repos\AsianPer5uasion\Gas-Sim\Gas Simulator\obj\Debug\Gas Simulator_MarkupCompile.lref
+C:\Users\bowbo\Source\Repos\AsianPer5uasion\Gas-Sim\Gas Simulator\obj\Debug\MainWindow.baml
+C:\Users\bowbo\Source\Repos\AsianPer5uasion\Gas-Sim\Gas Simulator\obj\Debug\Gas Simulator.g.resources
+C:\Users\bowbo\Source\Repos\AsianPer5uasion\Gas-Sim\Gas Simulator\obj\Debug\Gas_Simulator.Properties.Resources.resources
+C:\Users\bowbo\Source\Repos\AsianPer5uasion\Gas-Sim\Gas Simulator\obj\Debug\Gas Simulator.csproj.GenerateResource.cache
+C:\Users\bowbo\Source\Repos\AsianPer5uasion\Gas-Sim\Gas Simulator\obj\Debug\Gas Simulator.csproj.CoreCompileInputs.cache
+C:\Users\bowbo\Source\Repos\AsianPer5uasion\Gas-Sim\Gas Simulator\obj\Debug\Gas Simulator.exe
+C:\Users\bowbo\Source\Repos\AsianPer5uasion\Gas-Sim\Gas Simulator\obj\Debug\Gas Simulator.pdb

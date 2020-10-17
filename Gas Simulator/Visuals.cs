@@ -21,20 +21,18 @@ namespace Gas_Simulator
 
         public Model3DGroup MainModel3Dgroup = new Model3DGroup();
 
-        public void AddMolecule(double x, double y, double z, double radius, Viewport3D viewport)
+        public void AddMolecule(double x, double y, double z, double radius, Viewport3D viewport, SolidColorBrush brush)
 
         {
-            var phi = 10;   //Both dictate poly count (Greater = greater poly count)
-            var theta = 20;
-
-            var molOpacity = 0.5;  //0-1 transparency
+            var phi = 2;   //Both dictate poly count (Greater = greater poly count)
+            var theta = 4;
 
             //Def new mesh
             MeshGeometry3D mesh1 = new MeshGeometry3D();
             //Add sphere to the mesh
             AddSphere(mesh1, new Point3D(x, y, z), radius, phi, theta);
             //Define attributess
-            SolidColorBrush brush1 = Brushes.Red;
+            SolidColorBrush brush1 = brush;
             DiffuseMaterial material1 = new DiffuseMaterial(brush1);
             //material1.Brush.Opacity = molOpacity;
             //Define and add model
@@ -42,6 +40,7 @@ namespace Gas_Simulator
             MainModel3Dgroup.Children.Add(model1);
             ModelVisual3D model_visual = new ModelVisual3D();
             model_visual.Content = MainModel3Dgroup;
+            
             //Add to viewport
             viewport.Children.Add(model_visual);
 
