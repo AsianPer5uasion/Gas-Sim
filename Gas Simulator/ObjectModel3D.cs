@@ -1,8 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using SharpGL;
 
 namespace Gas_Simulator
 {
@@ -43,6 +42,21 @@ namespace Gas_Simulator
             }
 
             return new ObjectModel3D(vertices.ToArray(), triangles.ToArray());
+        }
+
+        // draw a 3d model
+        public void Draw(OpenGL gl)
+        {
+
+            gl.Color(1.0f, 0.0f, 0.0f);
+            
+            foreach (int[] tri in Triangles)
+            {
+                foreach (int v_index in tri)
+                {
+                    gl.Vertex(Vertices[v_index-1]);
+                }
+            }
         }
     }
 }
