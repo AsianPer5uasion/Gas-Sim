@@ -30,14 +30,90 @@ namespace Gas_Simulator
         private void openGLControl_OpenGLDraw(object sender, SharpGL.SceneGraph.OpenGLEventArgs args)
         {
             OpenGL gl = openGLControl.OpenGL;
-
             gl.Clear(OpenGL.GL_COLOR_BUFFER_BIT | OpenGL.GL_DEPTH_BUFFER_BIT);
             gl.Begin(OpenGL.GL_TRIANGLES);
 
-            testobj.Draw(gl);
-            Console.WriteLine("yo");
+
+            //gl.Color(1.0f, 0.5f, 0.0f);
+            //testobj.Draw(gl);
+
+            gl.Color(1.0f, 0.0f, 0.0f);
+            DrawCuboid(gl,0.05, 10,0.05);
+
+            gl.Color(0.0f, 1.0f, 0.0f);
+            DrawCuboid(gl,0.05, 0.05, 10);
+
+            gl.Color(0.0f, 0.0f, 1.0f);
+            DrawCuboid(gl,10, 0.05, 0.05);
+
             gl.End();
+
         }
+
+
+
+        private void DrawCuboid(OpenGL gl, double x, double y, double z)
+        {
+
+            //Face 1
+            gl.Vertex(x, y, -z);
+            gl.Vertex(x, -y, -z);
+            gl.Vertex(x, -y, z);
+
+            gl.Vertex(x, y, z);
+            gl.Vertex(x, y, -z);
+            gl.Vertex(x, -y, z);
+
+            //Face 2
+
+            gl.Vertex(-x, y, -z);
+            gl.Vertex(-x, -y, -z);
+            gl.Vertex(x, -y, -z);
+
+            gl.Vertex(x, y, -z);
+            gl.Vertex(-x, y, -z);
+            gl.Vertex(x, -y, -z);
+
+            //Face 3
+            gl.Vertex(-x, -y, z);
+            gl.Vertex(-x, y, z);
+            gl.Vertex(-x, y, -z);
+
+            gl.Vertex(-x, -y, -z);
+            gl.Vertex(-x, -y, z);
+            gl.Vertex(-x, y, -z);
+
+            //Face 4
+
+            gl.Vertex(x, -y, z);
+            gl.Vertex(x, y, z);
+            gl.Vertex(-x, y, z);
+
+            gl.Vertex(-x, -y, z);
+            gl.Vertex(x, -y, z);
+            gl.Vertex(-x, y, z);
+
+            //Face 5
+            gl.Vertex(x, -y, z);
+            gl.Vertex(-x, -y, -z);
+            gl.Vertex(x, -y, -z);
+
+            gl.Vertex(-x, -y, -z);
+            gl.Vertex(-x, -y, z);
+            gl.Vertex(x, -y, z);
+
+            //Face 6
+
+            gl.Vertex(x, y, z);
+            gl.Vertex(-x, y, -z);
+            gl.Vertex(x, y, -z);
+
+            gl.Vertex(-x, y, -z);
+            gl.Vertex(-x, y, z);
+            gl.Vertex(x, y, z);
+
+        }
+
 
         private void openGLControl_OpenGLInitialized(object sender, SharpGL.SceneGraph.OpenGLEventArgs args)
         {
